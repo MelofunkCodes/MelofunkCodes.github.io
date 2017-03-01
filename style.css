@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+}
+
+/* Utility classes */
+.responsive-img {
+  max-width: 100%;
+}
+
+/* Grid system! */
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+/* If an element needs all twelve columns, then its width is 100%. Easy. */
+.col-small-12 {
+    width: 100%;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.
+/* 
+
+* Banner 
+
+*/
+.banner {
+
+}
+
+/* 
+
+* Navigation 
+
+*/
+.navigation {
+   
+}
+
+/* 
+
+* About
+
+*/
+.about {
+    
+}
+
+/* 
+
+* Skills 
+
+*/
+.skills {
+    
+}
+
+
+/* 
+
+* Projects
+
+*/
+.projects {
+   
+}
+
+
+/* 
+
+* Education
+
+*/
+
+
+
+/* 
+
+* Work Experience
+
+*/
+.work {
+
+}
+
+/* Medium and up screen sizes */
+
+@media only screen and (min-width: 641px) {
+
+  /* This is the class we'd use if we want four elements next to each other */
+  .col-medium-3 {
+      width: 25%;
+  }
+
+  .col-medium-2 {
+      width: 16.666%;
+  }
+
+  .container {
+  	flex-direction: row;
+  	justify-content: space-around;
+
+  }
+
+}
+
+
+/* Large screen sizes */
+
+@media only screen and (min-width: 1025px) {
+
+
+
+}
+
