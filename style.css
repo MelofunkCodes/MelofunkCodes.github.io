@@ -16,7 +16,8 @@ h1, h2, h3 {
 
 /* Utility classes */
 .responsive-img {
-  max-width: 100%;
+  max-width: 90%;
+  padding-left: 1.75em;
 }
 
 /* Grid system! */
@@ -84,6 +85,10 @@ h1, h2, h3 {
 .icons li:hover {
     opacity: 1;
     background-color: hsl(195, 67%, 45%);
+}
+
+.icons a {
+	color: #ffa800;
 }
 
 .name h1 {
@@ -191,11 +196,12 @@ h1, h2, h3 {
 
 .projects p {
 	color: #efefef;
+	text-align: center;
 }
 
 .img-box:hover {
 	border: solid 2px #ffa800;
-	padding: 0.5em;
+	padding: 0.5em 0.5em 0.2em 0.5em;
 }
 
 /* 
@@ -299,6 +305,11 @@ h1, h2, h3 {
   	display: inline-block;
   	margin-right: 1em;
     margin-left: 0.5em;
+  }
+
+  .responsive-img {
+  	max-width: 100%;
+  	padding-left: 0;
   }
 
 }
