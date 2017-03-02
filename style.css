@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 /* Grid system! */
 .row {
-    max-width: 1000px;
+    max-width: 740px; /*Changed from 1000px*/
     margin: 0 auto;
     display: flex; 
     flex-wrap: wrap; 
@@ -40,68 +40,182 @@ h1, h2, h3 {
 .
 /* 
 
-* Banner 
+* =============== Banner =======================
 
 */
 .banner {
-
+	text-align: left;
+  /*overflow: hidden;*/
 }
 
+.banner-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile-pic img {
+	border-radius: 50%;
+}
+
+.empty-box {
+	width: 50px;
+	height: 150px;
+}
+
+.icons ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.icons li {
+  font-size: 2em;
+  margin: 0.2em 0.3em;
+  opacity: 0.5;
+  background-color: hsl(153, 13%, 4%);
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icons li:hover {
+    opacity: 1;
+    background-color: hsl(195, 67%, 45%);
+}
+
+.name h1 {
+	font-size: 3.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
 /* 
 
-* Navigation 
+* ============ Navigation =======================
 
 */
 .navigation {
-   
+  text-align: left;
+  background-color: LightGrey;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #13241C;
+  font-weight: 100;
+}
+
+.navigation a:hover {
+  background:#ffa800;
+  color:#000;
 }
 
 /* 
 
-* About
+* ============ About ===========================
 
 */
 .about {
-    
+  background-color: #2699BF; 
+  margin: 0 auto;
+  max-width: 740px; /*Changed from 1000px*/
+}
+
+.about h2 {
+	color: #ffa800;
+	font-size: 3em;
 }
 
 /* 
 
-* Skills 
+* ================ Skills ======================
 
 */
 .skills {
-    
+  background-color: #ffa800; /*yellow*/
+  margin: 0 auto;
+  max-width: 740px; /*Changed from 1000px*/
+}
+
+.skills h2 {
+	color: #2699bf;
+	font-size: 3em;
 }
 
 
 /* 
 
-* Projects
+* ================= Projects ===================
 
 */
 .projects {
-   
+  background-color: #1c1c1c; /* grey-black */
+  margin: 0 auto;
+  max-width: 740px; /*Changed from 1000px*/
+}
+
+.projects h2 {
+	color: #ffa800;
+	font-size: 3em;
+}
+
+.projects p {
+	color: #efefef;
+}
+
+/* 
+
+* ================= Education =================
+
+*/
+.education {
+	max-width: 740px; /*Changed from 1000px*/
+  margin: 0 auto;
+  background-color: #ffa800; /*yellow*/
+}
+
+.education h2 {
+	color: #2699bf;
+	font-size: 3em;
 }
 
 
 /* 
 
-* Education
+* ================= Work Experience ============
 
 */
-
-
-
-/* 
-
-* Work Experience
-
-*/
-.work {
-
+.workExp {
+	max-width: 740px;
+  margin: 0 auto;
+  background-color: #2699BF;
 }
 
+.workExp h2 {
+	color: #ffa800;
+	font-size: 2.75em;
+	overflow-wrap: break-word;
+}
+
+
+
+/* ==============================================
+====================MEDIA QUERIES================
+=================================================
+*/
 /* Medium and up screen sizes */
 
 @media only screen and (min-width: 641px) {
@@ -119,6 +233,15 @@ h1, h2, h3 {
   	flex-direction: row;
   	justify-content: space-around;
 
+  }
+
+	.navigation {
+		padding-bottom: 2em;
+	}
+  .navigation li{
+  	display: inline-block;
+  	margin-right: 1em;
+    margin-left: 0.5em;
   }
 
 }
