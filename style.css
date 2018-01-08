@@ -315,6 +315,7 @@ h2 {
   /* This is the class we'd use if we want four elements next to each other */
   .col-medium-3 {
       width: 25%;
+      margin: 0 1em 1em 1em;
   }
 
   .col-medium-2 {
@@ -323,8 +324,7 @@ h2 {
 
   .container {
   	flex-direction: row;
-  	justify-content: space-around;
-
+    justify-content: center;
   }
 
 	.navigation {
